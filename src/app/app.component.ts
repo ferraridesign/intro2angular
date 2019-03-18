@@ -9,5 +9,12 @@ import {HelloComponent} from './hello/hello.component'
 
 export class AppComponent {
   title = 'intro2angular';
+  myVariable = 'app'
+  this.myVariable = ""
+  constructor(){
+    setInterval(() => { 
+      this.myVariable = Math.random().toString()
+  },500)
+  }
   
 }
