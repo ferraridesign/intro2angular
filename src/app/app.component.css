@@ -1,0 +1,17 @@
+tr.even{
+	background: black;
+	color: white
+}
+
+tr.odd{
+	background: red;
+	color: white
+}
+tr.first{
+	font-size: 0.5em;
+	color: white
+}
+tr.last{
+	font-size: 1em;
+	color: yellow
+}
