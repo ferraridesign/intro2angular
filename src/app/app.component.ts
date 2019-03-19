@@ -8,6 +8,7 @@ import {RecordsService} from './records.service';
 })
 
 export class AppComponent {
+<<<<<<< HEAD
 records = {}
 
 constructor(private myFirstService: RecordsService){
@@ -17,7 +18,7 @@ constructor(private myFirstService: RecordsService){
 
 ngOnInit(){
 	this.records = this.myFirstService.getData()
-}
+
 
 
  /* title = 'intro2angular';
