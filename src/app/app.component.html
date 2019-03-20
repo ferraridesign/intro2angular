@@ -20,5 +20,10 @@ Hello world. A custom component says <app-hello></app-hello>
 
 <button (click)="callMyFunction()">Hey There></button>
 
+<div> Months :
+   <select>
+      <option *ngFor="let i of months">{{i}}</option>
+   </select>
+</div>
 <!--Angular 4200 -- makes an API call -- API server 1234
 Angular 4200 -- makes an API call to /api/* -- webpack dev sever -- API server 1234-->
