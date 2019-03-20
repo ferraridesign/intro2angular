@@ -18,7 +18,7 @@ records = []
    months = ["January", "February", "March", "April",
             "May", "June", "July", "August", "September",
             "October", "November", "December"];
-   isavailable = false;
+   isavailable = true;
 
 constructor(private myFirstService: RecordsService){
 
