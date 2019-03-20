@@ -1,9 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClientModule} from '@angular/common/http'
-
-interface myData {
-  obj: Object
-}
+ 
 
 @Injectable({
   providedIn: 'root'
