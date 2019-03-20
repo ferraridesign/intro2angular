@@ -27,8 +27,9 @@ Hello world. A custom component says <app-hello></app-hello>
 </div>
 <br/>
 <div>
-   <span *ngIf = "isavailable; else condition1">Condition is valid.</span>
-   <ng-template #condition1>Condition is invalid</ng-template>
+   <span *ngIf = "isavailable; then condition1 else condition2">Condition is valid.</span>
+   <ng-template #condition1>Condition is valid</ng-template>
+   <ng-template #condition2>Condition is invalid</ng-template>
 </div>
 <!--Angular 4200 -- makes an API call -- API server 1234
 Angular 4200 -- makes an API call to /api/* -- webpack dev sever -- API server 1234-->
