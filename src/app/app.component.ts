@@ -14,7 +14,7 @@ interface myData {
 
 export class AppComponent {
 
-records = {}
+records = []
 
 constructor(private myFirstService: RecordsService){
 
@@ -22,8 +22,8 @@ constructor(private myFirstService: RecordsService){
 }
 
 ngOnInit(){
-	this.records = this.myFirstService.getData().subscribe(data =>{
-      console.log("We got ", data.obj)
+ this.myFirstService.getData().subscribe(data =>{
+     this.records = data.obj
     })
 }
 
