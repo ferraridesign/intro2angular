@@ -10,38 +10,13 @@ export class RecordsService {
   constructor(private http: HttpClient) {
       
   }
-
+//rxjs asynchronos pipe where your endpoint is where u subscribe to
+  //php -$ localhost:1234 to run a local environment
 getData(){
-		return [
-	{
-		name:'Mehul',
-		online:true
-	},
-	{
-		name:'ABC',
-		online:false
-	},
-	{
-		name:'XYZ',
-		online:true
-	},
-	{
-		name:'ABC',
-		online:false
-	},
-	{
-		name:'XYZ',
-		online:true
-	},
-	{
-		name:'ABC',
-		online:false
-	},
-	{
-		name:'XYZ',
-		online:true
-	}
-] 
+		return this.http.get('http://localhost:1234/test.json')
+      .subscribe(data =>{
+      console.log("We got ", data)
+    })
 }
 
 }
