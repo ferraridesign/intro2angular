@@ -1,11 +1,15 @@
 import { Injectable } from '@angular/core';
+import {HttpClientModule} from '@angular/common/http'
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class RecordsService {
 
-  constructor() { }
+  constructor(private http: HttpClient) {
+      
+  }
 
 getData(){
 		return [
