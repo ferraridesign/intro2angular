@@ -1,6 +1,9 @@
 import { Injectable } from '@angular/core';
 import {HttpClientModule} from '@angular/common/http'
 
+interface myData {
+  obj: Object
+}
 
 @Injectable({
   providedIn: 'root'
@@ -13,10 +16,8 @@ export class RecordsService {
 //rxjs asynchronos pipe where your endpoint is where u subscribe to
   //php -$ localhost:1234 to run a local environment
 getData(){
-		return this.http.get('http://localhost:1234/file.php')
-      .subscribe(data =>{
-      console.log("We got ", data)
-    })
+		return this.http.get<myData>('http://localhost:1234/file.php')
+   
 }
 
 }
