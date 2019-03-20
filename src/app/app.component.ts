@@ -8,7 +8,7 @@ import {RecordsService} from './records.service';
 })
 
 export class AppComponent {
-<<<<<<< HEAD
+
 records = {}
 
 constructor(private myFirstService: RecordsService){
