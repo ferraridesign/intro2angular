@@ -13,7 +13,7 @@ export class RecordsService {
 //rxjs asynchronos pipe where your endpoint is where u subscribe to
   //php -$ localhost:1234 to run a local environment
 getData(){
-		return this.http.get('http://localhost:1234/test.json')
+		return this.http.get('http://localhost:1234/file.php')
       .subscribe(data =>{
       console.log("We got ", data)
     })
