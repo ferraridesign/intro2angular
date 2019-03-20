@@ -17,8 +17,10 @@ constructor(private myFirstService: RecordsService){
 }
 
 ngOnInit(){
-	this.records = this.myFirstService.getData()
-
+	this.records = this.myFirstService.getData().subscribe(data =>{
+      console.log("We got ", data.obj)
+    })
+}
 
 
  /* title = 'intro2angular';
