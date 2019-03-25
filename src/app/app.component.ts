@@ -13,7 +13,19 @@ interface myData {
 })
 
 export class AppComponent {
-
+ title = 'Angular 6 Project!';
+   //array of months.
+   months = ["January", "February", "March", "April",
+      "May", "June", "July", "August", "September",
+      "October", "November", "December"];
+   isavailable = false;
+   myClickFunction(event) {
+      this.isavailable = false;
+   }
+   changemonths(event) {
+      alert("Changed month from the Dropdown");
+      console.log(event);
+   }
 records = []
    months = ["January", "February", "March", "April",
             "May", "June", "July", "August", "September",
@@ -30,8 +42,8 @@ ngOnInit(){
      this.records = data.obj
     })
 }
-
-
+ 
+ 
  /* title = 'intro2angular';
     text = 'intro2angular';
 
